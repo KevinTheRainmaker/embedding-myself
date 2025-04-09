@@ -1,0 +1,17 @@
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.1.0
+google-auth-oauthlib>=1.0.0
+pinecone>=2.2.1
+google-generativeai>=0.3.1
+langchain-google-genai>=0.0.5
+langchain>=0.0.291
+langchain-core>=0.1.4
+# Document processing libraries
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+pandas>=2.0.0
+openpyxl>=3.1.2
+python-pptx>=0.6.21
+# Utils
+tenacity>=8.2.2
+python-dotenv>=1.0.0 

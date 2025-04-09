@@ -172,3 +172,36 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# 환경 변수 및 비밀키
+.env
+credentials.json
+token.json
+drive_checkpoint.json
+
+# 로그 파일
+*.log
+drive_monitor.log
+
+# 캐시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 가상 환경
+venv/
+env/
+ENV/
+
+# IDE 설정
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS 파일
+.DS_Store
+Thumbs.db
