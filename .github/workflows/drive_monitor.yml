@@ -52,26 +52,23 @@ jobs:
         echo "CHECK_INTERVAL=$CHECK_INTERVAL" >> .env
 
     - name: Restore checkpoint file
-      uses: actions/download-artifact@v2.1.1
+      uses: actions/download-artifact@f927a7d5b878c45be30dbf262e7bb31dfb6a6b3c
       with:
         name: checkpoint-file
         path: data/
       continue-on-error: true
 
-    - name: Run drive monitor
-      run: |
-        timeout 30m python scripts/create_vectors.py
-
     - name: Save checkpoint file
-      uses: actions/upload-artifact@v2.3.1
+      uses: actions/upload-artifact@7a73a45fdc3d2a603c3838a9bc6e4d6f70e7796d
       with:
         name: checkpoint-file
         path: data/drive_checkpoint.json
         retention-days: 7
 
     - name: Save logs
-      uses: actions/upload-artifact@v2.3.1
+      uses: actions/upload-artifact@7a73a45fdc3d2a603c3838a9bc6e4d6f70e7796d
       with:
         name: logs
         path: data/drive_monitor.log
         retention-days: 1
+
