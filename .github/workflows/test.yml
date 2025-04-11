@@ -1,0 +1,11 @@
+name: Check GitHub Actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "✅ GitHub Actions runner is working!"
