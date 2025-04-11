@@ -6,6 +6,10 @@ on:
     - cron: '0 12 * * *'
   workflow_dispatch:  # 수동 실행도 가능하게 설정
 
+permissions:
+  contents: read
+  actions: read
+
 jobs:
   monitor_drive:
     runs-on: ubuntu-latest
