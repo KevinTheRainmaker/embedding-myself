@@ -52,7 +52,7 @@ jobs:
         echo "CHECK_INTERVAL=$CHECK_INTERVAL" >> .env
 
     - name: Restore checkpoint file
-      uses: actions/download-artifact@f927a7d5b878c45be30dbf262e7bb31dfb6a6b3c
+      uses: actions/download-artifact@179bc3b6236dca0fbff5ce4e23d6b238f5f91856
       with:
         name: checkpoint-file
         path: data/
